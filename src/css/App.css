@@ -1,0 +1,133 @@
+#root {
+  height: 100vh;
+}
+
+.navbar {
+  height: 7vh;
+}
+
+.side-bar {
+  height: 100vh;
+  background-color: #313541;
+  color: #7d949c;
+  box-shadow: 1px 0px 15px -1px rgb(0 0 0 / 75%);
+  z-index: 1;
+}
+
+.side-bar .d-flex {
+  height: 100%;
+}
+
+.side-bar .list-group-item {
+  min-width: 150px;
+  background-color: inherit;
+  color: #7d949c;
+  cursor: pointer;
+}
+
+.side-bar .list-group-item.active {
+  background-color: #72cdd2;
+  color: #fff;
+}
+
+.side-bar #sidebar-collapse {
+  background-color: #282c37;
+  min-width: 300px;
+}
+
+.side-bar #sidebar-collapse .list-group-item:first-child {
+  border: #232630 1px solid !important;
+  color: #8299a1 !important;
+}
+
+.side-bar #sidebar-collapse .list-group-item {
+  color: #fff;
+  border: 0;
+}
+
+.side-bar #sidebar-collapse .list-group-item.active {
+  color: #91d72d;
+  background-color: #1c1f28;
+  border-color: #232630;
+  border-radius: 0;
+}
+
+.side-bar #sidebar-collapse .list-group hr {
+  border-color: #1b1e26;
+  margin: 0.5rem 0;
+}
+
+.side-bar #sidebar-collapse .list-group .sub-list-group li {
+  color: #8299a1 !important;
+  margin-top: 10px;
+}
+
+.custom-offcanvas {
+  position: absolute;
+  width: 18vw;
+  height: 93vh;
+  top: 0;
+  right: 0;
+  background-color: #313541;
+}
+
+.custom-offcanvas .title {
+  background-color: #72cdd2;
+  color: #fff;
+}
+
+.custom-offcanvas .detail {
+  color: #adaeb1;
+}
+
+.custom-offcanvas .icon-map {
+  color: #73cdd3;
+}
+
+.custom-offcanvas .icon-web {
+  color: #92d72d;
+}
+
+.map-box {
+  height: 93vh;
+  width: 100%;
+}
+
+.map-box .map-pin {
+  color: #ea5a5a;
+  z-index: 1;
+}
+
+.map-box .map-pin .detail {
+  min-width: 100px;
+  background-color: #282c39;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.map-box .map-pin .detail .address {
+  display: none;
+}
+.map-box .map-pin:hover {
+  z-index: 10;
+}
+.map-box .map-pin:hover .detail {
+  background-color: #92d72e;
+}
+
+.map-box .map-pin:hover .detail .address {
+  display: block;
+}
+.map-box .map-pin.active {
+  z-index: 10;
+}
+.map-box .map-pin.active .detail {
+  background-color: #92d72e;
+}
+
+.map-box .map-pin.active .detail .address {
+  display: block;
+}
